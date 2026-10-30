@@ -32,12 +32,12 @@ export default function DevelopmentPage() {
           {/* Plan Básico */}
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 flex flex-col justify-between hover:border-[#24b3a9]/50 transition-all">
             <div>
-              <h3 className="text-2xl font-bold mb-2 text-[#24b3a9] font-[Gill_Sans]">Plan Básico / Landing</h3>
+              <h3 className="text-2xl font-bold mb-2 text-[#24b3a9] font-[Gill_Sans]">Plan Impulso / Landing</h3>
               <p className="text-gray-400 text-sm mb-6 font-[Arial]">Ideal para lanzar tu presencia rápidamente en internet.</p>
               <ul className="space-y-4 mb-8 text-sm text-gray-300 font-[Arial]">
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Landing Page de 1 sección</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Landing Page de 4 secciónes</li>
                 <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Adaptable a celulares y tablets</li>
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Formulario de contacto directo</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Redireccion directa a tu whatsapp</li>
                 <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Enlaces a redes sociales</li>
               </ul>
             </div>
@@ -55,13 +55,13 @@ export default function DevelopmentPage() {
               Más Popular
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-2 text-white font-[Gill_Sans]">Plan Emprendedor</h3>
+              <h3 className="text-2xl font-bold mb-2 text-white font-[Gill_Sans]">Plan Proyeccion</h3>
               <p className="text-gray-300 text-sm mb-6 font-[Arial]">Perfecto para mostrar tus productos o servicios con catálogo.</p>
               <ul className="space-y-4 mb-8 text-sm text-gray-200 font-[Arial]">
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Sitio web multipágina (hasta 5 secciones)</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Sitio web multipágina (hasta 6 secciones)</li>
                 <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Catálogo digital o lista de servicios</li>
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Optimización de carga rápida</li>
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Formulario + Mapa interactivo</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> SEO basico</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Instalacion de Google Analytics</li>
               </ul>
             </div>
             <button 
@@ -75,13 +75,13 @@ export default function DevelopmentPage() {
           {/* Plan Corporativo */}
           <div className="bg-white/5 rounded-2xl p-8 border border-white/10 flex flex-col justify-between hover:border-[#58b03b]/50 transition-all">
             <div>
-              <h3 className="text-2xl font-bold mb-2 text-[#58b03b] font-[Gill_Sans]">Plan Corporativo</h3>
-              <p className="text-gray-400 text-sm mb-6 font-[Arial]">Para negocios que requieren máxima personalización.</p>
+              <h3 className="text-2xl font-bold mb-2 text-[#58b03b] font-[Gill_Sans]">Plan en proceso</h3>
+              <p className="text-gray-400 text-sm mb-6 font-[Arial]">???</p>
               <ul className="space-y-4 mb-8 text-sm text-gray-300 font-[Arial]">
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Sitio web a medida ilimitado</li>
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Integración de sistemas avanzados</li>
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Optimización SEO avanzada</li>
-                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Soporte y mantenimiento prioritario</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> ???</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> ???</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> ???</li>
+                <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> ???</li>
               </ul>
             </div>
             <button 
