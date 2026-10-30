@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
+import logoPointCode from '../assets/logoPointCode.png'; // 
 
 export default function Footer() {
   return (
@@ -8,12 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-12 border-b border-white/10">
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-[#24b3a9] to-[#58b03b] flex items-center justify-center font-bold text-xl text-[#14162d] font-[Gill_Sans]">
-                PC
-              </div>
-              <span className="font-bold text-xl tracking-wider uppercase text-white font-[Gill_Sans]">
-                [TU_LOGO_AQUÍ]
-              </span>
+              <img 
+                src={logoPointCode} 
+                alt="Point Code Logo" 
+                style={{ height: '140px', width: '200px' }} // 
+                className="object-contain filter brightness-0 invert" 
+              />
             </div>
             <p className="text-gray-400 text-sm max-w-sm leading-relaxed font-[Arial]">
               Diseñamos y desarrollamos soluciones web optimizadas para que tu marca destaque y escale en el entorno digital.
@@ -25,11 +26,11 @@ export default function Footer() {
             <div className="space-y-4 text-gray-300 text-sm font-[Arial]">
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-[#58b03b]" />
-                <span>+57 300 000 0000</span>
+                <span>+57 323 735 5714</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-[#24b3a9]" />
-                <span>contacto@tudominio.com</span>
+                <span>codewebpoint@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={18} className="text-[#58b03b]" />
@@ -40,7 +41,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 text-center text-xs text-gray-500 font-[Gill_Sans]">
-          © 2026 Tu Empresa. Todos los derechos reservados.
+          © 2026 Point Code. Todos los derechos reservados.
         </div>
       </div>
     </footer>

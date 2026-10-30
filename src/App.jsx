@@ -1,28 +1,38 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import Packages from './components/Packages';
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
-import ModalQuote from './components/ModalQuote';
+import DevelopmentPage from './pages/DevelopmentPage';
+import DesignPage from './pages/DesignPage';
 
-export default function App() {
-  const [selectedPlan, setSelectedPlan] = useState(null);
-
+function Home() {
   return (
-    <div className="bg-[#14162d] text-white min-h-screen selection:bg-[#24b3a9] selection:text-[#14162d]">
-      <Navbar />
+    <>
       <Hero />
       <AboutUs />
-      <Packages onSelectPlan={(plan) => setSelectedPlan(plan)} />
+      <Packages />
       <Portfolio />
-      <Footer />
+    </>
+  );
+}
 
-      <ModalQuote 
-        planName={selectedPlan} 
-        onClose={() => setSelectedPlan(null)} 
-      />
-    </div>
+export default function App() {
+  return (
+    <Router>
+      {/* Forzamos w-screen y overflow-hidden para eliminar franjas laterales */}
+      <div className="bg-[#14162d] text-white min-h-screen w-full overflow-x-hidden m-0 p-0">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/desarrollo" element={<DevelopmentPage />} />
+          <Route path="/diseno" element={<DesignPage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }

@@ -1,78 +1,67 @@
 import React from 'react';
-import { Check } from 'lucide-react';
+import { Code, Palette, ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-export default function Packages({ onSelectPlan }) {
+export default function Packages() {
+  const navigate = useNavigate();
+
   return (
-    <section id="paquetes" className="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="paquetes" className="py-20 w-full px-6 sm:px-12 lg:px-20">
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-[Gill_Sans]">
-          Paquetes que Tenemos
+          Nuestros Servicios y Paquetes
         </h2>
         <p className="text-gray-300 text-lg font-[Arial]">
-          Selecciona la opción que mejor se adapte a la etapa actual de tu negocio.
+          Selecciona la categoría que necesitas para explorar las soluciones disponibles para tu negocio.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-white/5 rounded-2xl p-8 border border-white/10 flex flex-col justify-between hover:border-[#24b3a9]/50 transition-all">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        
+        {/* Opción 1: Desarrollo e Innovación */}
+        <div className="bg-[#14162d] rounded-2xl p-8 border border-white/10 hover:border-[#24b3a9] transition-all flex flex-col justify-between group shadow-xl">
           <div>
-            <h3 className="text-2xl font-bold mb-2 text-[#24b3a9] font-[Gill_Sans]">Plan Básico / Landing</h3>
-            <p className="text-gray-400 text-sm mb-6 font-[Arial]">Ideal para lanzar tu presencia rápidamente en internet.</p>
-            <ul className="space-y-4 mb-8 text-sm text-gray-300 font-[Arial]">
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Landing Page de 1 sección</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Adaptable a celulares y tablets</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Formulario de contacto directo</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Enlaces a redes sociales</li>
-            </ul>
+            <div className="w-16 h-16 bg-[#24b3a9]/10 rounded-xl flex items-center justify-center text-[#24b3a9] mb-6 group-hover:scale-110 transition-transform">
+              <Code size={36} />
+            </div>
+            <h3 className="text-2xl font-bold mb-3 text-white font-[Gill_Sans]">
+              Desarrollo e Innovación
+            </h3>
+            <p className="text-gray-400 text-sm leading-relaxed mb-8 font-[Arial]">
+              Landing pages, sitios corporativos y plataformas web a medida optimizadas para maximizar conversión y rendimiento.
+            </p>
           </div>
           <button 
-            onClick={() => window.open('https://wa.me/message/NIM6DH4S2L3AO1', '_blank')}
-            className="w-full bg-transparent hover:bg-[#24b3a9] border border-[#24b3a9] text-[#24b3a9] hover:text-[#14162d] font-bold py-3 rounded-xl transition-all font-[Gill_Sans]"
+            onClick={() => navigate('/desarrollo')}
+            className="w-full bg-[#24b3a9] hover:bg-[#24b3a9]/90 text-[#14162d] font-bold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center space-x-2 font-[Gill_Sans]"
           >
-            Seleccionar Plan
+            <span>Ver Planes de Desarrollo</span>
+            <ArrowRight size={18} />
           </button>
         </div>
 
-        <div className="bg-gradient-to-b from-white/10 to-white/5 rounded-2xl p-8 border-2 border-[#24b3a9] relative flex flex-col justify-between transform md:-translate-y-2 shadow-2xl shadow-[#24b3a9]/10">
-          <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#24b3a9] text-[#14162d] font-extrabold text-xs px-4 py-1 rounded-full uppercase tracking-widest font-[Gill_Sans]">
-            Más Popular
-          </div>
+        {/* Opción 2: Diseño */}
+        <div className="bg-[#14162d] rounded-2xl p-8 border border-white/10 hover:border-[#58b03b] transition-all flex flex-col justify-between group shadow-xl">
           <div>
-            <h3 className="text-2xl font-bold mb-2 text-white font-[Gill_Sans]">Plan Emprendedor</h3>
-            <p className="text-gray-300 text-sm mb-6 font-[Arial]">Perfecto para mostrar tus productos o servicios con catálogo.</p>
-            <ul className="space-y-4 mb-8 text-sm text-gray-200 font-[Arial]">
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Sitio web multipágina (hasta 5 secciones)</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Catálogo digital o lista de servicios</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Optimización de carga rápida</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Formulario + Mapa interactivo</li>
-            </ul>
+            <div className="w-16 h-16 bg-[#58b03b]/10 rounded-xl flex items-center justify-center text-[#58b03b] mb-6 group-hover:scale-110 transition-transform">
+              <Palette size={36} />
+            </div>
+            <h3 className="text-2xl font-bold mb-3 text-white font-[Gill_Sans]">
+              Diseño
+            </h3>
+            <p className="text-gray-400 text-sm leading-relaxed mb-8 font-[Arial]">
+              Diseño de identidad visual, prototipado UI/UX y creación de piezas digitales estratégicas para tu marca.
+            </p>
           </div>
           <button 
-            onClick={() => window.open('https://wa.me/message/NIM6DH4S2L3AO1', '_blank')}
-            className="w-full bg-[#24b3a9] hover:bg-[#24b3a9]/90 text-[#14162d] font-extrabold py-3.5 rounded-xl transition-all shadow-lg font-[Gill_Sans]"
+            onClick={() => navigate('/diseno')}
+            className="w-full border-2 border-[#58b03b] hover:bg-[#58b03b]/10 text-white font-bold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center space-x-2 font-[Gill_Sans]"
           >
-            Seleccionar Plan
+            <span>Ver Planes de Diseño</span>
+            <ArrowRight size={18} className="text-[#58b03b]" />
           </button>
         </div>
 
-        <div className="bg-white/5 rounded-2xl p-8 border border-white/10 flex flex-col justify-between hover:border-[#58b03b]/50 transition-all">
-          <div>
-            <h3 className="text-2xl font-bold mb-2 text-[#58b03b] font-[Gill_Sans]">Plan Corporativo</h3>
-            <p className="text-gray-400 text-sm mb-6 font-[Arial]">Para negocios que requieren máxima personalización.</p>
-            <ul className="space-y-4 mb-8 text-sm text-gray-300 font-[Arial]">
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Sitio web a medida ilimitado</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Integración de sistemas avanzados</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Optimización SEO avanzada</li>
-              <li className="flex items-center"><Check size={18} className="text-[#58b03b] mr-3" /> Soporte y mantenimiento prioritario</li>
-            </ul>
-          </div>
-          <button 
-            onClick={() => window.open('https://wa.me/message/NIM6DH4S2L3AO1', '_blank')}
-            className="w-full bg-transparent hover:bg-[#58b03b] border border-[#58b03b] text-[#58b03b] hover:text-[#14162d] font-bold py-3 rounded-xl transition-all font-[Gill_Sans]"
-          >
-            Seleccionar Plan
-          </button>
-        </div>
       </div>
     </section>
   );
