@@ -26,7 +26,7 @@ export default function Packages({ onSelectPlan }) {
             </ul>
           </div>
           <button 
-            onClick={() => onSelectPlan("Plan Básico")}
+            onClick={() => window.open('https://wa.me/message/NIM6DH4S2L3AO1', '_blank')}
             className="w-full bg-transparent hover:bg-[#24b3a9] border border-[#24b3a9] text-[#24b3a9] hover:text-[#14162d] font-bold py-3 rounded-xl transition-all font-[Gill_Sans]"
           >
             Seleccionar Plan
@@ -48,7 +48,7 @@ export default function Packages({ onSelectPlan }) {
             </ul>
           </div>
           <button 
-            onClick={() => onSelectPlan("Plan Emprendedor")}
+            onClick={() => window.open('https://wa.me/message/NIM6DH4S2L3AO1', '_blank')}
             className="w-full bg-[#24b3a9] hover:bg-[#24b3a9]/90 text-[#14162d] font-extrabold py-3.5 rounded-xl transition-all shadow-lg font-[Gill_Sans]"
           >
             Seleccionar Plan
@@ -67,7 +67,7 @@ export default function Packages({ onSelectPlan }) {
             </ul>
           </div>
           <button 
-            onClick={() => onSelectPlan("Plan Corporativo")}
+            onClick={() => window.open('https://wa.me/message/NIM6DH4S2L3AO1', '_blank')}
             className="w-full bg-transparent hover:bg-[#58b03b] border border-[#58b03b] text-[#58b03b] hover:text-[#14162d] font-bold py-3 rounded-xl transition-all font-[Gill_Sans]"
           >
             Seleccionar Plan

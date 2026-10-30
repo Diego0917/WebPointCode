@@ -1,30 +1,15 @@
 import React from 'react';
 import { ExternalLink } from 'lucide-react';
+import PapaSanLuis from "../assets/PapaSanLuis.png";
 
 export default function Portfolio() {
   const projects = [
     {
       id: 1,
-      title: "Tienda y Catálogo Digital",
-      desc: "Rediseño visual enfocado en experiencia de usuario y optimización móvil.",
-      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      link: "https://ejemplo.com/proyecto-1",
-      color: "text-[#24b3a9]"
-    },
-    {
-      id: 2,
-      title: "Landing Page Corporativa",
-      desc: "Página de captura de clientes potenciales con alta velocidad de carga.",
-      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-      link: "https://ejemplo.com/proyecto-2",
-      color: "text-[#58b03b]"
-    },
-    {
-      id: 3,
-      title: "Sitio Web de Servicios",
-      desc: "Estructura limpia y clara para presentación de servicios profesionales.",
-      img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
-      link: "https://ejemplo.com/proyecto-3",
+      title: "Papas San Luis",
+      desc: "Plataforma comercial y catálogo digital optimizado para distribución de alimentos, enfocado en captación de clientes y diseño adaptable.",
+      img: PapaSanLuis,
+      link: "https://www.papasanluis.com/",
       color: "text-[#24b3a9]"
     }
   ];
@@ -40,10 +25,12 @@ export default function Portfolio() {
             Explora algunos de los sitios web y soluciones digitales que hemos desarrollado.
           </p>
         </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center items-center gap-8">
           {projects.map((proj) => (
-            <div key={proj.id} className="bg-[#14162d] rounded-2xl overflow-hidden border border-white/10 group hover:border-[#24b3a9] transition-all">
+            <div 
+              key={proj.id} 
+              className="bg-[#14162d] rounded-2xl overflow-hidden border border-white/10 group hover:border-[#24b3a9] transition-all w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] max-w-md shadow-xl"
+            >
               <div className="relative overflow-hidden aspect-video">
                 <img 
                   src={proj.img} 
@@ -51,7 +38,7 @@ export default function Portfolio() {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 text-left">
                 <h3 className="text-xl font-bold mb-2 text-white font-[Gill_Sans]">{proj.title}</h3>
                 <p className="text-gray-400 text-sm mb-6 font-[Arial]">{proj.desc}</p>
                 <a 
