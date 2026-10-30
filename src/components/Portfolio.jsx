@@ -15,8 +15,8 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="portafolio" className="py-20 bg-white/5 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="portafolio" className="py-20 w-full px-6 sm:px-12 lg:px-20 border-t border-white/5">
+      <div className="w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-[Gill_Sans]">
             Nuestro Portafolio
@@ -25,11 +25,13 @@ export default function Portfolio() {
             Explora algunos de los sitios web y soluciones digitales que hemos desarrollado.
           </p>
         </div>
+
+        {/* Contenedor flexible con centrado y diseño de tarjetas */}
         <div className="flex flex-wrap justify-center items-center gap-8">
           {projects.map((proj) => (
             <div 
               key={proj.id} 
-              className="bg-[#14162d] rounded-2xl overflow-hidden border border-white/10 group hover:border-[#24b3a9] transition-all w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] max-w-md shadow-xl"
+              className="backdrop-blur-md bg-white/5 rounded-2xl overflow-hidden border border-white/10 group hover:border-[#24b3a9] transition-all w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] max-w-md shadow-2xl"
             >
               <div className="relative overflow-hidden aspect-video">
                 <img 

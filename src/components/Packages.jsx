@@ -19,7 +19,7 @@ export default function Packages() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         
         {/* Opción 1: Desarrollo e Innovación */}
-        <div className="bg-[#14162d] rounded-2xl p-8 border border-white/10 hover:border-[#24b3a9] transition-all flex flex-col justify-between group shadow-xl">
+        <div className="backdrop-blur-md bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-[#24b3a9] transition-all flex flex-col justify-between group shadow-2xl">
           <div>
             <div className="w-16 h-16 bg-[#24b3a9]/10 rounded-xl flex items-center justify-center text-[#24b3a9] mb-6 group-hover:scale-110 transition-transform">
               <Code size={36} />
@@ -41,7 +41,7 @@ export default function Packages() {
         </div>
 
         {/* Opción 2: Diseño */}
-        <div className="bg-[#14162d] rounded-2xl p-8 border border-white/10 hover:border-[#58b03b] transition-all flex flex-col justify-between group shadow-xl">
+        <div className="backdrop-blur-md bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-[#58b03b] transition-all flex flex-col justify-between group shadow-2xl">
           <div>
             <div className="w-16 h-16 bg-[#58b03b]/10 rounded-xl flex items-center justify-center text-[#58b03b] mb-6 group-hover:scale-110 transition-transform">
               <Palette size={36} />

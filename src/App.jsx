@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 import DevelopmentPage from './pages/DevelopmentPage';
 import DesignPage from './pages/DesignPage';
+import GlowCursor from './components/GlowCursor'; // <--- 1. Importa el componente
 
 function Home() {
   return (
@@ -23,8 +24,10 @@ function Home() {
 export default function App() {
   return (
     <Router>
-      {/* Forzamos w-screen y overflow-hidden para eliminar franjas laterales */}
-      <div className="bg-[#14162d] text-white min-h-screen w-full overflow-x-hidden m-0 p-0">
+      <div className="bg-[#14162d] bg-grid-pattern text-white min-h-screen w-full overflow-x-hidden m-0 p-0 relative">
+        
+        <GlowCursor /> {/* <--- 2. Colócalo aquí para que persista en todo el sitio */}
+        
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

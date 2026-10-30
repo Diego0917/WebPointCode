@@ -1,26 +1,26 @@
 import React from 'react';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import TypewriterTitle from './TypewriterTitle'; // <--- Importamos el componente
 
 export default function Hero() {
   return (
-    <section id="inicio" className="pt-36 pb-24 md:pt-48 md:pb-32 px-6 sm:px-8 lg:px-16 max-w-7xl mx-auto relative overflow-hidden">
+    <section id="inicio" className="pt-36 pb-24 md:pt-48 md:pb-32 px-6 sm:px-12 lg:px-20 w-full relative overflow-hidden">
       {/* Fondo decorativo con brillo sutil */}
       <div className="absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#24b3a9]/10 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end w-full">
         
         {/* Columna Izquierda: Títulos y Descripción */}
-        <div className="lg:col-span-9 text-left">
+        <div className="lg:col-span-10 text-left">
           
-          {/* Título Principal Alineado en Bloque */}
+          {/* Título Principal con Efecto Máquina de Escribir */}
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-8 leading-none font-[Gill_Sans]">
-            <span className="block text-white mb-2">TU PRESENCIA</span>
-            <span className="block text-[#24b3a9] mb-2">DIGITAL</span>
-            <span className="block text-white">QUE VENDE.</span>
+            <span className="block text-white mb-2">TU PRESENCIA DIGITAL</span>
+            <TypewriterTitle /> {/* <--- Aquí se alternan dinámicamente las palabras */}
           </h1>
 
           {/* Subtítulo con barra lateral de acento */}
-          <div className="flex items-center space-x-4 mb-12 max-w-3xl">
+          <div className="flex items-center space-x-4 mb-12 max-w-4xl">
             <div className="w-1.5 h-12 bg-[#24b3a9] rounded-full flex-shrink-0"></div>
             <p className="text-lg sm:text-xl text-gray-300 leading-relaxed font-[Arial]">
               Diseñamos páginas web modernas, rápidas y optimizadas para que tu negocio destaque y venda <strong className="text-white">24/7</strong>.
@@ -48,8 +48,8 @@ export default function Hero() {
 
         </div>
 
-        {/* Columna Derecha: Etiquetas de Atributos (Diseño / Estrategia / Resultados) */}
-        <div className="lg:col-span-3 hidden lg:flex flex-col items-end justify-end text-right pb-4">
+        {/* Columna Derecha: Etiquetas de Atributos */}
+        <div className="lg:col-span-2 hidden lg:flex flex-col items-end justify-end text-right pb-4">
           <div className="space-y-2 font-[Gill_Sans] text-xs tracking-widest text-gray-400 uppercase select-none">
             <p className="hover:text-[#24b3a9] transition-colors cursor-default">Diseño</p>
             <p className="hover:text-[#24b3a9] transition-colors cursor-default">Estrategia</p>

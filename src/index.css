@@ -29,7 +29,24 @@
     font-size: 16px;
   }
 }
+@import "tailwindcss";
 
+html, body, #root {
+  width: 100%;
+  max-width: 100% !important;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #14162d;
+}
+
+/* Patrón de cuadrícula global para todo el sitio */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px; /* Ajusta el tamaño de los cuadros aquí si los quieres más grandes o pequeños */
+}
 html, body, #root {
   width: 100%;
   max-width: 100% !important;

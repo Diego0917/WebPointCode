@@ -1,16 +1,18 @@
-# React + Vite
+# Point Code - Sitio Web Corporativo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Sitio web modular y responsivo desarrollado con **React**, **Vite**, **Tailwind CSS** y **React Router DOM**.
 
-Currently, two official plugins are available:
+## 🚀 Requisitos previos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Asegúrate de tener instalado en tu equipo:
+- [Node.js](https://nodejs.org/) (Versión 18 o superior recomendada)
+- npm (Gestor de paquetes de Node)
 
-## React Compiler
+## 📦 Instalación y Configuración
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Sigue estos pasos para clonar y poner en marcha el proyecto en tu entorno local:
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. **Clona el repositorio:**
+   ```bash
+   git clone <URL-DE-TU-REPOSITORIO>
+   cd <NOMBRE-DE-LA-CARPETA>
