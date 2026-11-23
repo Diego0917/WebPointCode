@@ -18,10 +18,10 @@ export default function Portfolio() {
     <section id="portafolio" className="py-20 w-full px-6 sm:px-12 lg:px-20 border-t border-white/5">
       <div className="w-full">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-[Gill_Sans]">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Nuestro Portafolio
           </h2>
-          <p className="text-gray-300 text-lg font-[Arial]">
+          <p className="text-gray-300 text-lg">
             Explora algunos de los sitios web y soluciones digitales que hemos desarrollado.
           </p>
         </div>
@@ -41,13 +41,13 @@ export default function Portfolio() {
                 />
               </div>
               <div className="p-6 text-left">
-                <h3 className="text-xl font-bold mb-2 text-white font-[Gill_Sans]">{proj.title}</h3>
-                <p className="text-gray-400 text-sm mb-6 font-[Arial]">{proj.desc}</p>
+                <h3 className="text-xl font-bold mb-2 text-white">{proj.title}</h3>
+                <p className="text-gray-400 text-sm mb-6">{proj.desc}</p>
                 <a 
                   href={proj.link} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className={`inline-flex items-center ${proj.color} hover:underline font-semibold text-sm font-[Gill_Sans]`}
+                  className={`inline-flex items-center ${proj.color} hover:underline font-semibold text-sm`}
                 >
                   Ver sitio web en vivo <ExternalLink size={16} className="ml-1" />
                 </a>

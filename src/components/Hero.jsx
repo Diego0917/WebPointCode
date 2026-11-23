@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="lg:col-span-10 text-left">
           
           {/* Título Principal con Efecto Máquina de Escribir */}
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-8 leading-none font-[Gill_Sans]">
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-8 leading-none">
             <span className="block text-white mb-2">TU PRESENCIA DIGITAL</span>
             <TypewriterTitle /> {/* <--- Aquí se alternan dinámicamente las palabras */}
           </h1>
@@ -22,13 +22,13 @@ export default function Hero() {
           {/* Subtítulo con barra lateral de acento */}
           <div className="flex items-center space-x-4 mb-12 max-w-4xl">
             <div className="w-1.5 h-12 bg-[#24b3a9] rounded-full flex-shrink-0"></div>
-            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed font-[Arial]">
+            <p className="text-lg sm:text-xl text-gray-300 leading-relaxed">
               Diseñamos páginas web modernas, rápidas y optimizadas para que tu negocio destaque y venda <strong className="text-white">24/7</strong>.
             </p>
           </div>
 
           {/* Botones de Acción */}
-          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-5 font-[Gill_Sans]">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-5">
             <a 
               href="#paquetes" 
               className="bg-[#24b3a9] hover:bg-[#24b3a9]/90 text-[#14162d] text-base font-bold px-8 py-4 rounded-lg transition-all flex items-center justify-between group shadow-lg shadow-[#24b3a9]/20"
@@ -50,7 +50,7 @@ export default function Hero() {
 
         {/* Columna Derecha: Etiquetas de Atributos */}
         <div className="lg:col-span-2 hidden lg:flex flex-col items-end justify-end text-right pb-4">
-          <div className="space-y-2 font-[Gill_Sans] text-xs tracking-widest text-gray-400 uppercase select-none">
+          <div className="space-y-2 text-xs tracking-widest text-gray-400 uppercase select-none">
             <p className="hover:text-[#24b3a9] transition-colors cursor-default">Diseño</p>
             <p className="hover:text-[#24b3a9] transition-colors cursor-default">Estrategia</p>
             <p className="hover:text-[#58b03b] transition-colors cursor-default">Resultados</p>

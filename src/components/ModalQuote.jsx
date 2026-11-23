@@ -13,11 +13,11 @@ export default function ModalQuote({ planName, onClose }) {
         >
           <X size={24} />
         </button>
-        <h3 className="text-2xl font-bold mb-2 text-[#24b3a9] font-[Gill_Sans]">¡Excelente Elección!</h3>
-        <p className="text-gray-300 text-sm mb-6 font-[Arial]">
+        <h3 className="text-2xl font-bold mb-2 text-[#24b3a9]">¡Excelente Elección!</h3>
+        <p className="text-gray-300 text-sm mb-6">
           Has seleccionado el <strong className="text-white">{planName}</strong>. Déjanos tu correo para ponernos en contacto contigo.
         </p>
-        <form onSubmit={(e) => { e.preventDefault(); onClose(); alert('¡Gracias! Te contactaremos pronto.'); }} className="space-y-4 font-[Gill_Sans]">
+        <form onSubmit={(e) => { e.preventDefault(); onClose(); alert('¡Gracias! Te contactaremos pronto.'); }} className="space-y-4">
           <input 
             type="email" 
             placeholder="Tu correo electrónico" 

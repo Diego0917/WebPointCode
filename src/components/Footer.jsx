@@ -16,14 +16,14 @@ export default function Footer() {
                 className="object-contain filter brightness-0 invert" 
               />
             </div>
-            <p className="text-gray-400 text-sm max-w-sm leading-relaxed font-[Arial]">
+            <p className="text-gray-400 text-sm max-w-sm leading-relaxed">
               Diseñamos y desarrollamos soluciones web optimizadas para que tu marca destaque y escale en el entorno digital.
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-6 text-[#24b3a9] font-[Gill_Sans]">Información de Contacto</h4>
-            <div className="space-y-4 text-gray-300 text-sm font-[Arial]">
+            <h4 className="text-lg font-bold mb-6 text-[#24b3a9]">Información de Contacto</h4>
+            <div className="space-y-4 text-gray-300 text-sm">
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-[#58b03b]" />
                 <span>+57 323 735 5714</span>
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 text-center text-xs text-gray-500 font-[Gill_Sans]">
+        <div className="pt-8 text-center text-xs text-gray-500">
           © 2026 Point Code. Todos los derechos reservados.
         </div>
       </div>

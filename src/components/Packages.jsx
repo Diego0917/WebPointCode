@@ -8,10 +8,10 @@ export default function Packages() {
   return (
     <section id="paquetes" className="py-20 w-full px-6 sm:px-12 lg:px-20">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 font-[Gill_Sans]">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4">
           Nuestros Servicios y Paquetes
         </h2>
-        <p className="text-gray-300 text-lg font-[Arial]">
+        <p className="text-gray-300 text-lg">
           Selecciona la categoría que necesitas para explorar las soluciones disponibles para tu negocio.
         </p>
       </div>
@@ -24,16 +24,16 @@ export default function Packages() {
             <div className="w-16 h-16 bg-[#24b3a9]/10 rounded-xl flex items-center justify-center text-[#24b3a9] mb-6 group-hover:scale-110 transition-transform">
               <Code size={36} />
             </div>
-            <h3 className="text-2xl font-bold mb-3 text-white font-[Gill_Sans]">
+            <h3 className="text-2xl font-bold mb-3 text-white">
               Desarrollo e Innovación
             </h3>
-            <p className="text-gray-400 text-sm leading-relaxed mb-8 font-[Arial]">
+            <p className="text-gray-400 text-sm leading-relaxed mb-8">
               Landing pages, sitios corporativos y plataformas web a medida optimizadas para maximizar conversión y rendimiento.
             </p>
           </div>
           <button 
             onClick={() => navigate('/desarrollo')}
-            className="w-full bg-[#24b3a9] hover:bg-[#24b3a9]/90 text-[#14162d] font-bold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center space-x-2 font-[Gill_Sans]"
+            className="w-full bg-[#24b3a9] hover:bg-[#24b3a9]/90 text-[#14162d] font-bold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center space-x-2"
           >
             <span>Ver Planes de Desarrollo</span>
             <ArrowRight size={18} />
@@ -46,16 +46,16 @@ export default function Packages() {
             <div className="w-16 h-16 bg-[#58b03b]/10 rounded-xl flex items-center justify-center text-[#58b03b] mb-6 group-hover:scale-110 transition-transform">
               <Palette size={36} />
             </div>
-            <h3 className="text-2xl font-bold mb-3 text-white font-[Gill_Sans]">
+            <h3 className="text-2xl font-bold mb-3 text-white">
               Diseño
             </h3>
-            <p className="text-gray-400 text-sm leading-relaxed mb-8 font-[Arial]">
+            <p className="text-gray-400 text-sm leading-relaxed mb-8">
               Diseño de identidad visual, prototipado UI/UX y creación de piezas digitales estratégicas para tu marca.
             </p>
           </div>
           <button 
             onClick={() => navigate('/diseno')}
-            className="w-full border-2 border-[#58b03b] hover:bg-[#58b03b]/10 text-white font-bold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center space-x-2 font-[Gill_Sans]"
+            className="w-full border-2 border-[#58b03b] hover:bg-[#58b03b]/10 text-white font-bold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center space-x-2"
           >
             <span>Ver Planes de Diseño</span>
             <ArrowRight size={18} className="text-[#58b03b]" />
