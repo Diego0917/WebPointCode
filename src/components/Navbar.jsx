@@ -54,6 +54,7 @@ export default function Navbar() {
           <a href="/#inicio" onClick={(e) => handleNavClick(e, 'inicio')} className="text-gray-300 hover:text-[#24b3a9] transition-colors">Inicio</a>
           <a href="/#quienes-somos" onClick={(e) => handleNavClick(e, 'quienes-somos')} className="text-gray-300 hover:text-[#24b3a9] transition-colors">Quiénes Somos</a>
           <a href="/#paquetes" onClick={(e) => handleNavClick(e, 'paquetes')} className="text-gray-300 hover:text-[#24b3a9] transition-colors">Paquetes</a>
+          <a href="/#tecnologias" onClick={(e) => handleNavClick(e, 'tecnologias')} className="text-gray-300 hover:text-[#24b3a9] transition-colors">Tecnologías</a>
           <a href="/#portafolio" onClick={(e) => handleNavClick(e, 'portafolio')} className="text-gray-300 hover:text-[#24b3a9] transition-colors">Portafolio</a>
           <a href="#contacto" onClick={(e) => handleNavClick(e, 'contacto')} className="text-gray-300 hover:text-[#24b3a9] transition-colors">Contacto</a>
         </div>
@@ -84,6 +85,7 @@ export default function Navbar() {
           <a href="/#inicio" onClick={(e) => handleNavClick(e, 'inicio')} className="block text-gray-300 hover:text-[#24b3a9]">Inicio</a>
           <a href="/#quienes-somos" onClick={(e) => handleNavClick(e, 'quienes-somos')} className="block text-gray-300 hover:text-[#24b3a9]">Quiénes Somos</a>
           <a href="/#paquetes" onClick={(e) => handleNavClick(e, 'paquetes')} className="block text-gray-300 hover:text-[#24b3a9]">Paquetes</a>
+          <a href="/#tecnologias" onClick={(e) => handleNavClick(e, 'tecnologias')} className="block text-gray-300 hover:text-[#24b3a9]">Tecnologías</a>
           <a href="/#portafolio" onClick={(e) => handleNavClick(e, 'portafolio')} className="block text-gray-300 hover:text-[#24b3a9]">Portafolio</a>
           <a href="#contacto" onClick={(e) => handleNavClick(e, 'contacto')} className="block text-gray-300 hover:text-[#24b3a9]">Contacto</a>
           <div className="pt-2">
